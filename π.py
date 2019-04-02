@@ -1,6 +1,6 @@
 
 # -*- coding: utf8 -*-
-import time 
+import time
 def comput():
 	n =int(input('请输入要计算圆周率的长度：'))
 	start_time = time.time()
@@ -19,8 +19,13 @@ def comput():
 	pai //= 10**10
 	end_time = time.time()
 	run_time = str(end_time - start_time)
+	paistr=str(pai)
+	paistr=paistr[:1] + '.' + paistr[1:]
+	f=open('pai.txt','w')
+	f.write(paistr)
+	f.close()
 	print ('运行时间：' + run_time )
-	print ('计算结果:',pai)
+	#print ('计算结果:',pai)
 	print ('\n'*3) 
 	comput()
 comput()
