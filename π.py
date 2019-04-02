@@ -2,7 +2,7 @@
 # -*- coding: utf8 -*-
 import time
 def comput():
-	n =  int(input('请输入要计算圆周率的长度：'))
+	n =int(input('请输入要计算圆周率的长度：'))
 	start_time = time.time()
 	w = n+10
 	b = 10**w
@@ -20,8 +20,7 @@ def comput():
 	end_time = time.time()
 	run_time = str(end_time - start_time)
 	print ('运行时间：' + run_time )
-	print ('计算结果:')
-	print (pai)
+	print ('计算结果:',pai)
 	print ('\n'*3) 
 	comput()
 
