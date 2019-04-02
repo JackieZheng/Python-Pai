@@ -1,6 +1,6 @@
 
 # -*- coding: utf8 -*-
-import time
+import time 
 def comput():
 	n =int(input('请输入要计算圆周率的长度：'))
 	start_time = time.time()
