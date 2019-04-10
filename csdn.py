@@ -4,6 +4,8 @@ import decimal
 import re
 import time
 
+import sys
+import numpy as np
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 import requests
@@ -95,3 +97,4 @@ if __name__ == '__main__':
     }
     spider(url, headers)
     drawBydata()
+    print(sys.path)
